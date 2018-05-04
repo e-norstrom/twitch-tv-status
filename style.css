@@ -1,0 +1,47 @@
+
+body {
+  margin: 100px 20px 100px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 100px 0 30px auto;
+}
+
+a {
+  display: block;
+  padding: 30px;
+  align-content: center;
+
+}
+
+ul {
+  text-align: center;
+  margin: 0 50 0 50 auto;
+  list-style-type: none;
+  border-style: solid;
+  background-color:;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0;
+  display: block;
+}
+
+li {
+  color: black;
+  border-style: solid;
+  border-width: medium;
+  border-radius: 8px;
+  display: block;
+  align-content: center;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+}
