@@ -15,6 +15,20 @@ a {
 
 }
 
+.tabButtons {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+
+}
+
+button {
+  display: inline-block;
+  text-align: center;
+  margin: 0 30 auto;
+  float: inherit;
+}
+
 ul {
   text-align: center;
   margin: 0 50 0 50 auto;

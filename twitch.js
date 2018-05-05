@@ -17,6 +17,22 @@
 $(document).ready(function() {
   console.log('Ready');
 
+
+  $('#all').click(function() {
+    $('li').show();
+  });
+
+  $('#online').click(function() {
+    $('.blue').hide();
+    $('.green').show();
+  });
+
+  $('#offline').click(function() {
+    $('.green').hide();
+    $('.blue').show();
+  });
+
+
   let ul = document.getElementById('list');
   let listIdNumber = 1;
 
@@ -56,10 +72,12 @@ $(document).ready(function() {
             $(li).append(linkHolder);
             console.log(whatGame);
             console.log(status);
+
           }
           console.log(data);
         });
         listIdNumber++;
       });
   });
+ //hatClass('li');
 });
