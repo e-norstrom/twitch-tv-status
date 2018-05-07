@@ -1,6 +1,8 @@
 
 body {
-  margin: 100px 20px 100px 20px;
+  margin: 100px 20px 0px 20px;
+  overflow-y: scroll;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -10,35 +12,94 @@ h1 {
 
 a {
   display: block;
-  padding: 30px;
-  align-content: center;
-
+  padding: 70px;
+  text-decoration: none;
+  color: white;
 }
 
-.tabButtons {
-    display: inline-block;
-    text-align: center;
-    margin: auto;
-
+.tab-row {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-button {
+.status-button {
   display: inline-block;
   text-align: center;
-  margin: 0 30 auto;
-  float: inherit;
+  margin: 0 auto;
+  color: #6441a5;
+  padding: 20px 0px;
+  outline: none;
+  width: 30%;
+  border-color: #815fc0;
+  background-color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: #815fc0;
+  color: white;
+}
+
+.active:hover {
+  background-color: #6441a4;
+  color: white;
+}
+
+.inactive {
+  background-color: white;
+}
+
+.inactive:hover {
+  background-color: #815fc0;
+  color: white;
+  border-color: #815fc0;
+  border-width: thin;
+  /* border-radius: 70px; */
+}
+
+.purple {
+  background-color: #815fc0;
+  color: white;
+}
+
+.purple:hover {
+  background-color: #6441a4;
+}
+
+.grey {
+  background-color: #999999;
+  color: white;
+}
+
+.grey:hover {
+  background-color: #737373;
+}
+
+#logo {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 ul {
   text-align: center;
-  margin: 0 50 0 50 auto;
+  margin: 0 50px 0 50px auto;
   list-style-type: none;
   border-style: solid;
-  background-color:;
   width: 100%;
   border-radius: 10px;
   padding: 0;
-  display: block;
+  display: inline-block;
+  border-color: #815fc0;
 }
 
 li {
@@ -46,16 +107,15 @@ li {
   border-style: solid;
   border-width: medium;
   border-radius: 8px;
-  display: block;
   align-content: center;
+  transition: 0.3s;
+  animation: fadeEffect 1s;
 }
 
-.green {
-  background-color: green;
-  color: white;
-}
-
-.blue {
-  background-color: blue;
-  color: white;
+footer {
+  text-align: center;
+  height: 0px;
+  margin-top: 50px;
+  margin-bottom: -50px;
+  width: 100%;
 }
