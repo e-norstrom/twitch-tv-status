@@ -1,0 +1,21 @@
+<html>
+  <meta charst="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    </head>
+    <body>
+      <main>
+        <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Twitch_logo.svg" alt="Twitch Tv logo"></img>
+        <div class="tab-row">
+          <button id="all" class="status-button inactive">All</button>
+          <button id="online" class="status-button inactive">Online</button>
+          <button id="offline" class="status-button inactive">Offline</button>
+        </div>
+          <ul id="list"></ul>
+        <footer>Twitch Status</footer>
+      </main>
+    </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+<script src="twitch.js"></script>
